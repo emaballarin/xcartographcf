@@ -75,7 +75,11 @@ mv XCartographCF-Italic.otf XCartographCF-RegularItalic.otf
 mv XCartographCFThin.otf XCartographCF-Thin.otf
 mv XCartographCFThin-Italic.otf XCartographCF-ThinItalic.otf
 
+# Cleanup
+rm -R -f ./otf/
+rm -f ./Cartograph*.otf
+
 # Prepare release
 mkdir xcartographcf
-mv *otf xcartographcf
+mv *.otf xcartographcf
 zip xcartographcf.zip xcartographcf/*
