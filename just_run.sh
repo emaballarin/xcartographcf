@@ -6,8 +6,8 @@ NERDFONTVERS=v2.1.0
 
 # Prepare original fonts from official release
 unzip Cartograph*.zip
-rm -f __MACOSX
-Cartograph*CF*OTF otf
+rm -R -f __MACOSX
+mv Cartograph*CF*OTF otf
 rm -f ./otf/*.pdf
 
 # Get and prepare NerdFonts Patcher
