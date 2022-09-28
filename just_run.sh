@@ -6,7 +6,9 @@ NERDFONTVERS=v2.1.0
 
 # Prepare original fonts from official release
 unzip Cartograph*.zip
-rm -f ./*.md
+rm -f __MACOSX
+Cartograph*CF*OTF otf
+rm -f ./otf/*.pdf
 
 # Get and prepare NerdFonts Patcher
 curl -L https://raw.githubusercontent.com/ryanoasis/nerd-fonts/${NERDFONTVERS}/font-patcher --output font-patcher
